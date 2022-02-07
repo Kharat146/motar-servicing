@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: "ubuntu", sans-serif;
+        }
+
+        #services .inner-width {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        #services .service-heading {
+            font-size: 30px;
+            padding-top: 10px;
+            margin-left: 5%;
+
+        }
+
+        #services .services-box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #services .services-image {
+            width: 150px;
+            height: 50px;
+            margin: 5px;
+            color: #fff;
+            background-color: #111;
+            border-radius: 100%;
+            padding: 10px 10px;
+            padding-top: 20px;
+            margin-left: 10px;
+        }
+
+
+        #services .services {
+            display: flex;
+            width: 40%;
+            height: 5vh;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px 0;
+            cursor: pointer;
+            transition: .3s linear;
+        }
+
+        #services .services-all {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 65%;
+            /* padding: 20px; */
+
+        }
+
+        #services .services-text {
+            text-align: start;
+            padding-left: 5px;
+        }
+
+        #services .services-heading {
+            border-bottom: 2px solid grey;
+            font-size: 15px;
+        }
+
+        #services .services-para {
+            font-size: 15px;
+            /* padding: 5px; */
+            color: grey;
+        }
+
+
+        #services .services-img img {
+            align-items: center;
+        }
+
+
+        #services2 .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .service-heading_2 {
+            color: #fff;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .service {
+            width: 20%;
+            text-align: center;
+            border: 1px solid #48dbfb;
+            border-radius: 6px;
+            margin: 20px 10px;
+            padding: 35px 20px;
+            color: #f1f1f1;
+            cursor: pointer;
+            transition: .3s linear;
+        }
+
+        .service .icon {
+            color: #48dbfb;
+            font-size: 40px;
+            margin-bottom: 20px;
+            transition: .3s linear;
+        }
+
+        .service h4 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .service:hover {
+            background-color: #48dbfb;
+        }
+
+        .service:hover .icon {
+            color: #fff;
+        }
+
+        section.dark {
+            background-color: #353b48;
+        }
+
+        /*  */
+    </style>
+</head>
+
+<body>
+    <section id="services">
+        <div class="inner-width">
+            <div class="service-heading">
+                <h1>Handyman Services</h1>
+            </div>
+            <div class="services-box">
+                <div class="services-all">
+                    <div class="services">
+                        <div class="services-image">
+                            <i class="fa fa-2x fa-balance-scale" aria-hidden="true"></i>
+                        </div>
+                        <div class="services-text">
+                            <div class="services-heading">
+                                <h1>Professional Handyman</h1>
+                            </div>
+                            <div class="services-para">
+                                <p>Our goal is to provide you the best handyman service.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services">
+                        <div class="services-image">
+                            <i class="fa fa-3x fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="services-text">
+                            <div class="services-heading">
+                                <h1>24/7 Services</h1>
+                            </div>
+                            <div class="services-para">
+
+                                <p>We provide 24/7 service. Whenever you call, we service you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services">
+                        <div class="services-image">
+                            <i class="fa fa-3x fa-money" aria-hidden="true"></i>
+                        </div>
+                        <div class="services-text">
+                            <div class="services-heading">
+                                <h1>Affordable Price</h1>
+                            </div>
+                            <div class="services-para">
+
+                                <p>We check for glitches that need attention to keep you safe and save your money.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services">
+                        <div class="services-image">
+                            <i class="fa fa-2x fa-car" aria-hidden="true"></i>
+                        </div>
+                        <div class="services-text">
+                            <div class="services-heading">
+                                <h1>Best Materials</h1>
+                            </div>
+                            <div class="services-para">
+                                <p>Work with us involve a carefully planned series of steps, centered around a schedule
+                                    daily communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-img">
+                    <img src="https://renovation.thememove.com/wp-content/uploads/2017/05/home-caculator-01.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="services2" class="dark">
+        <div class="inner-width">
+            <h1 class="service-heading_2">Services</h1>
+            <div class="services">
+                <div class="service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/vehicle.png" alt=""
+                        class="icon">
+                    <h1>Vehicle care</h1>
+                </div>
+                <div class="service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/carpentry.png" alt=""
+                        class="icon">
+                    <h1>catpentry</h1>
+                </div>
+                <div class="service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/plumbing.png" alt=""
+                        class="icon">
+                    <h1>plumbing</h1>
+                </div>
+                <div class=" service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/appliances.png" alt=""
+                        class="icon">
+                    <h4>Apliances</h4>
+                </div>
+                <div class="service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/cleaning.png" alt=""
+                        class="icon">
+                    <h1>cleaning</h1>
+                </div>
+                <div class="service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/electrical.png" alt=""
+                        class="icon">
+                    <h1>Electrical</h1>
+
+                </div>
+                <div class="service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/pest.png" alt=""
+                        class="icon">
+                    <h1>pest control</h1>
+                </div>
+                <div class="service">
+                    <img src="http://fullstacksolution.net/demo/hireahelper/images/services-icons/painting.png" alt=""
+                        class="icon">
+                    <h1>painting</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

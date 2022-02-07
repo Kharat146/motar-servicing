@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+            font-size: 30px;
+            padding-bottom: 20px;
+            color: black;
+            text-shadow: 2px 2px 2px gray;
+
+        }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: black;
+            bottom: 0;
+            left: calc(50% - 40px);
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            background-color: cornflowerblue;
+            border: 4px solid #f1f1f1;
+            left: calc(50% - 10px);
+            bottom: -10px;
+
+        }
+
+        .img {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 40%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 5px rgb(78, 78, 114);
+        }
+
+
+
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .team_heading {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            font-size: 40px;
+            padding-bottom: 20px;
+            color: rgb(61, 59, 59);
+            text-shadow: 2px 2px 2px gray;
+
+        }
+
+        .team_heading::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: rgb(0, 132, 255);
+            bottom: 0;
+            left: calc(50% - 40px);
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .team_1 {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ajay {
+            height: 35vh;
+        }
+
+
+        .sm a {
+            color: #111111;
+            font-size: 15px;
+            margin: 0 5px;
+            z-index: 999;
+            transition: .2s linear;
+        }
+
+
+        .skills {
+            margin-top: 40px;
+            background-color: #ddd;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skills h1 {
+            width: 100%;
+        }
+
+        .skill {
+            width: 45%;
+            margin: 15px 0;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-bar {
+            height: 3px;
+            background-color: #ddd;
+            margin-top: 14px;
+            position: relative;
+        }
+
+        .skill-bar::after {
+            content: "";
+            position: absolute;
+            height: 6px;
+            background-color: cornflowerblue;
+            bottom: 0;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-delay: 2s;
+        }
+
+
+
+        @keyframes example {
+            0% {
+                background-color: cornflowerblue;
+                width: 0px;
+            }
+
+            5% {
+                background-color: cornflowerblue;
+                width: 15px;
+            }
+
+            10% {
+                background-color: cornflowerblue;
+                width: 30px;
+            }
+
+            15% {
+                background-color: cornflowerblue;
+                width: 50px;
+            }
+
+            20% {
+                background-color: cornflowerblue;
+                width: 65px;
+            }
+
+
+            25% {
+                background-color: cornflowerblue;
+                width: 80px;
+            }
+
+            30% {
+                background-color: cornflowerblue;
+                width: 100px;
+            }
+
+            35% {
+                background-color: cornflowerblue;
+                width: 115px;
+            }
+
+            40% {
+                background-color: cornflowerblue;
+                width: 130px;
+            }
+
+            45% {
+                background-color: cornflowerblue;
+                width: 150px;
+            }
+
+            50% {
+                background-color: cornflowerblue;
+                width: 200px;
+            }
+
+            65% {
+                background-color: cornflowerblue;
+                width: 250px;
+            }
+
+            75% {
+                background-color: cornflowerblue;
+                width: 300px;
+            }
+
+            85% {
+                background-color: cornflowerblue;
+                width: 400px;
+            }
+
+            100% {
+                background-color: cornflowerblue;
+                width: 500px;
+            }
+        }
+
+        .html:after {
+            width: 99%;
+            transition: .2s linear;
+
+        }
+
+        .css:after {
+            width: 92%;
+            transition: .3s linear;
+        }
+
+        .js:after {
+            width: 72%;
+
+        }
+
+        .php:after {
+            width: 75%;
+        }
+
+        .Mysql:after {
+            width: 60%;
+        }
+
+        .jQury:after {
+            width: 89%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="section-title">About</h1>
+
+    <h3>About the project :-</h3>
+    <p>
+        Millions of cars running on Indian roads are in regular need of scheduled servicing, timely repairs,
+        denting-painting and detailing. Unfortunately, owners often end up spending big amounts for a service that may
+        not be value for money at all. Car service and repair is not only time consuming but also quite expensive. Top
+        of it most of us do not even know what we are paying for or how much time will the repair take .Our lack of
+        automotive knowledge is often taken advantage of by local or authorised workshops and all we end up with is high
+        bills , low quality repairs and a horrible experience.
+    </p>
+    <div class="img">
+        <img src="https://assets.wallpapersin4k.org/uploads/2017/04/Car-Service-Wallpaper-7.jpg" alt="">
+        <img src="https://avshertford.co.uk/wp-content/uploads/2018/05/header2.jpg" alt="">
+    </div>
+    <p>
+        At our website, we believe that motor service should be convenient, transparent, high quality and reliable. We
+        understand that car is a complex machine and it is difficult for you to figure out the correct solution for your
+        car's symptoms. This is where our skilled and knowledgeable in house technicians come to your rescue. Our well
+        trained technician come right at your doorstep to diagnose the problem and suggest or book the correct service.
+        Minor repairs or regular service are either done at the comfort of your doorstep or at certified garage near
+        your location. We also provide free pickup and drop facility for you to avoid the dreadful traffic. You are
+        given the quote even before any service or repair work starts. To put it even better we service your car only
+        post your approval. You also receive timely service updates and post service support whenever needed.
+
+    </p>
+    <div class="our_team">
+        <div class="team_heading">Our Team</div>
+        <div class="team">
+            <div class="team_1">
+                <div class="photo">
+                    <img src="ajay1.jpg" alt="" class="ajay">
+                </div>
+                <h3>Ajay Kharat</h3>
+                <div class="sm">
+                    <a href=""> <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+            <div class="team_1">
+                <div class="photo">
+                    <img src="sumit.jpg" alt="">
+                </div>
+                <h3>Sumit Pawar</h3>
+                <div class="sm">
+                    <a href=""> <i class="fa fa-2x fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <h1>OUR SKILLS</h1>
+        <div class="skill">
+            <div class="skill-bar html"></div>
+            <div class="skill-info">
+                <span>Tire and Wheel Services</span>
+                <span>95%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-bar css"></div>
+            <div class="skill-info">
+                <span>Engine Diagnostics</span>
+                <span>92%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-bar js"></div>
+            <div class="skill-info">
+                <span>Lube, Oil and Filters</span>
+                <span>72%<span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-bar php"></div>
+            <div class="skill-info">
+                <span>Brake Repair</span>
+                <span>75%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-bar Mysql"></div>
+            <div class="skill-info">
+                <span>Belts and Hoses</span>
+                <span>60%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-bar jQury"></div>
+            <div class="skill-info">
+                <span>Air Conditioning</span>
+                <span>89%</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
